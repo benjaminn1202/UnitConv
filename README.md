@@ -4,7 +4,7 @@ UnitConv is a free unit converter hybrid mobile application for android.
 
 ## Table of Contents
 
-- [Images](#images)
+- [Image](#image)
 - [Downlaod](#download)
 - [Usage](#usage)
 - [Features](#features)
