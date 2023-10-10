@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter ni Benj</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src='app.js'></script>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav-bar">
+            <img class="nav-menu-button" src="resources/hamburger-menu-icon.svg">
+            <nav>
+                <div class="nav-item length-nav-btn">
+                    <img src="resources/length-icon.svg">
+                    <span>Length</span>
+                </div>
+                <div class="nav-item mass-nav-btn">
+                    <img src="resources/mass-icon.svg">
+                    <span>Mass</span>
+                </div>
+                <div class="nav-item volume-nav-btn">
+                    <img src="resources/volume-icon.svg">
+                    <span>Volume</span>
+                </div>
+                <div class="nav-item temperature-nav-btn">
+                    <img src="resources/temperature-icon.svg">
+                    <span>Temperature</span>
+                </div>
+                <div class="nav-item time-nav-btn">
+                    <img src="resources/time-icon.svg">
+                    <span>Time</span>
+                </div>
+                <div class="nav-item data-storage-nav-btn">
+                    <img src="resources/data-storage-icon.svg">
+                    <span>Data Storage</span>
+                </div>
+
+                <div class="nav-item nav-hr">
+                </div>
+
+                <div class="nav-item about-nav-btn">
+                    <img src="resources/about-icon.svg">
+                    <span>About</span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="clear-button" id="clear-button">C</div>
+
+        <div class="content">
+            <div class="headline">
+                <span class="heading">Length</span>
+                <span class="paragraph">Quantifies how long or short something is.</span>
+            </div>
+            
+            <!-- Length -->
+            <div class="input-container length-container">
+                <div class="input-group">
+                    <label for="mm-input">Millimeter (mm)</label>
+                    <input class="mm-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="cm-input">Centimeter (cm)</label>
+                    <input class="cm-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="m-input">Meter (m)</label>
+                    <input class="m-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="km-input">Kilometer (km)</label>
+                    <input class="km-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="in-input">Inch (in)</label>
+                    <input class="in-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="ft-input">Foot (Foot)</label>
+                    <input class="ft-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="yd-input">Yard (yd)</label>
+                    <input class="yd-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="mi-input">Mile (mi)</label>
+                    <input class="mi-input" type="number" placeholder="0">
+                </div>
+            </div>
+
+            <!-- Mass -->
+            <div class="input-container mass-container">
+                <div class="input-group">
+                    <label for="mg-input">Milligram (mg)</label>
+                    <input class="mg-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="g-input">Gram (g)</label>
+                    <input class="g-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="kg-input">Kilogram (kg)</label>
+                    <input class="kg-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="oz-input">Ounce (oz)</label>
+                    <input class="oz-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="lb-input">Pound (lb)</label>
+                    <input class="lb-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="t-input">Tonne (t)</label>
+                    <input class="t-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="ut-input">US Ton (short ton)</label>
+                    <input class="ut-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="it-input">Imperial Ton (long ton)</label>
+                    <input class="it-input" type="number" placeholder="0">
+                </div>
+            </div>
+            
+            <!-- Volume -->
+            <div class="input-container volume-container">
+                <div class="input-group">
+                    <label for="mL-input">Milliliters (mL)</label>
+                    <input class="mL-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="L-input">Liters (L)</label>
+                    <input class="L-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="cubic-cm-input">Cubic Centimeters (cm³)</label>
+                    <input class="cubic-cm-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="cubic-m-input">Cubic Meters (m³)</label>
+                    <input class="cubic-m-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="cubic-in-input">Cubic Inches (in³)</label>
+                    <input class="cubic-in-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="fl-oz-input">US Fluid Ounces (fl oz)</label>
+                    <input class="fl-oz-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="pt-input">US Pints (pt)</label>
+                    <input class="pt-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="qt-input">US Quarts (qt)</label>
+                    <input class="qt-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="gal-input">US Gallons (gal)</label>
+                    <input class="gal-input" type="number" placeholder="0">
+                </div>
+            </div>
+
+            
+            <div class="input-container temperature-container">
+                <div class="input-group">
+                    <label for="celsius-input">Degree Celsius (°C)</label>
+                    <input class="celsius-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="fahrenheit-input">Fahrenheit (°F)</label>
+                    <input class="fahrenheit-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="kelvin-input">Kelvin (K)</label>
+                    <input class="kelvin-input" type="number" placeholder="0">
+                </div>
+            </div>
+
+            <!-- Time -->
+            <div class="input-container time-container">
+                <div class="input-group">
+                    <label for="ps-input">Picosecond (ps)</label>
+                    <input class="ps-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="ns-input">Nanosecond (ns)</label>
+                    <input class="ns-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="us-input">Microsecond (µs)</label>
+                    <input class="us-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="ms-input">Millisecond (ms)</label>
+                    <input class="ms-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="s-input">Second (s)</label>
+                    <input class="s-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="min-input">Minute (min)</label>
+                    <input class="min-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="hr-input">Hour (hr)</label>
+                    <input class="hr-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="day-input">Day (day)</label>
+                    <input class="day-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="wk-input">Week (wk)</label>
+                    <input class="wk-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="mo-input">Month (mo)</label>
+                    <input class="mo-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="yr-input">Year (yr)</label>
+                    <input class="yr-input" type="number" placeholder="0">
+                </div>                
+            </div>
+
+
+            <!-- Data Storage -->
+            <div class="input-container data-storage-container">
+                <div class="input-group">
+                    <label for="bit-input">Bit (b)</label>
+                    <input class="bit-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="byte-input">Byte (B)</label>
+                    <input class="byte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="kilobyte-input">Kilobyte (KB)</label>
+                    <input class="kilobyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="megabyte-input">Megabyte (MB)</label>
+                    <input class="megabyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="gigabyte-input">Gigabyte (GB)</label>
+                    <input class="gigabyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="terabyte-input">Terabyte (TB)</label>
+                    <input class="terabyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="petabyte-input">Petabyte (PB)</label>
+                    <input class="petabyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="exabyte-input">Exabyte (EB)</label>
+                    <input class="exabyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="zettabyte-input">Zettabyte (ZB)</label>
+                    <input class="zettabyte-input" type="number" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="yottabyte-input">Yottabyte (YB)</label>
+                    <input class="yottabyte-input" type="number" placeholder="0">
+                </div>
+            </div>
+
+            <div class="input-container about-container">
+                <p>
+                    A simple unit converter application for android devices. It can covert the following units: Length, Mass, Volume, Temperature, Time, and Data Storage. <br><br>
+                    Hello! I am the developer of this application. Here are my social links: <br>
+                    <span class="a github-anchor">Github</span> <br>
+                    <span class="a facebook-anchor">Facebook</span> <br>
+                    <span class="a instagram-anchor">Instagram</span> <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

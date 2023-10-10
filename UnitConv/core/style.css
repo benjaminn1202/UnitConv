@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Prompt';
+  src: url('Prompt/Prompt-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+    user-select: none;
+    overflow: hidden;
+}
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #435334;
+    overflow: hidden;
+}
+
+.clear-button {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+    background-color: #FF5733;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease;
+}
+
+.clear-button:hover {
+    background-color: #FF2400;
+}
+
+.disable-hover:hover {
+    background-color: #FF5733;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+}
+.nav-bar {
+    width: 100vw;
+    height: auto;
+    background-color: #435334;
+    border-bottom: 1px solid #435334;
+}
+.nav-menu-button {
+    margin: 0.7rem;
+}
+
+nav {
+    width: 55%;
+    height: auto;
+    background-color: #576C43;
+    position: absolute;
+    z-index: 1;
+    left: -55%;
+}
+
+.nav-item {
+    margin: 2rem 1rem;
+    display: flex;
+}
+.nav-item img {
+    width: 1.5rem;
+}
+.nav-item span {
+    text-align: start;
+    margin-left: 1rem;
+    color: #ddd;
+    font-size: 1rem;
+}
+.nav-hr {
+    border: 1px solid #ddd;
+}
+
+.content {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    background-image: url('resources/background.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-y: auto;
+    grid-template-rows: repeat(9,1fr);
+}
+
+.headline {
+    background-color: #435334;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+}
+.headline .heading {
+    color: #fff;
+    font-size: 1.5rem;
+    display: block;
+    margin: 1rem 1rem 0.25rem 1rem;
+}
+.headline .paragraph {
+    color: #ddd;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin: 0.25rem 1rem 4rem 1rem;
+}
+
+.input-container {
+    width: 85vw;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    transform: translateY(-2rem);
+}
+
+.input-group {
+    margin: 1.5rem;
+    font-size: 1rem;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    border: 1px solid #9A9999;
+    color: #9A9999;
+    border-radius: 0.5rem;
+}
+.input-group label {
+    position: absolute;
+    top: -25%;
+    left: 3%;
+    background-color: #fff;
+}
+.input-group input {
+    width: 94%;
+    height: 1.5rem;
+    font-size: 1rem;
+    border: unset;
+    margin-top: 0.9rem;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.mass-container, .volume-container, .temperature-container, .time-container, .data-storage-container, .about-container {
+    display: none;
+}
+.about-container {
+    justify-items: center;
+    align-items: center;
+}
+.about-container p {
+    margin: 1rem;
+    text-align: center;
+    color: #888;
+}
+.about-container .a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.shownav {
+    animation: shownav 500ms 1;
+    left: 0;
+}
+.hidenav {
+    animation: hidenav 500ms 1;
+    left: -55%;
+}
+.dim {
+    animation: dim 500ms 1;
+    filter: brightness(0.60);
+    overflow-y: hidden;
+}
+.undim {
+    animation: undim 500ms 1;
+    filter: brightness(1);
+}
+
+@keyframes shownav {
+    from {
+        left: -55%;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes hidenav {
+    from {
+        left: 0;
+    }
+    to {
+        left: -55%;
+    }
+}
+@keyframes dim {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(0.60);
+    }
+}
+@keyframes undim {
+    from {
+        filter: brightness(0.60);
+    }
+    to {
+        filter: brightness(1);
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    html {
+        font-size: 22px;
+    }
+}
