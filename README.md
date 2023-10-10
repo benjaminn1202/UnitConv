@@ -6,7 +6,6 @@ UnitConv is a free unit converter hybrid mobile application for android.
 
 - [Image](#image)
 - [Downlaod](#download)
-- [Usage](#usage)
 - [Features](#features)
 - [Technologies](#technologies)
 
@@ -21,10 +20,6 @@ Here are the following download links for UnitConv.
 - [Google Drive](https://drive.google.com/file/d/18o41YBrojBbTMN1ryRs7Cgvos-1yPdPP/view?usp=drive_link)
 - [MediaFire](https://www.mediafire.com/file/vpnsimteqd2dwjm/UnitConv.apk/file)
 - [Dropbox](https://www.dropbox.com/scl/fi/ahmt228yrqhdlzjoptz8b/UnitConv.apk?rlkey=xskgd630vmzels8fjqwceztlu&dl=0)
-
-## Usage
-
-[Explain how to use your app with examples]
 
 ## Features
 
